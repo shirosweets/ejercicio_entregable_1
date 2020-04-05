@@ -1,0 +1,12 @@
+Hice una pequeña modificación al script que compartí el otro día para el lab1, pero ahora para correr el programa de este ejercicio 
+sobre algunos archivos nuevos.Esta vez definí yo (pero recomiendo que ustedes se animen y definan los suyos también) algunos archivos que sí tienen cima.
+A estos archivos los llamé peak<N>.in con N (entre 1 y 4, por el momento) La tercera linea de estos archivos 
+es la cima (espero no haberme equivocado yo con el valor de la cima :lengua_fuera:, si me equivoqué avisen!). 
+Si quisieran crear los suyos deberían llamarlos peak5.in, peak6.in , y así sucesivamente.Estos archivos deberían ponerlos dentro de la 
+carpeta inputEl script test_inputs.sh debería estar dentro de la carpeta root del ejercicio, es decir, junto con el ejecutable lab_extra .
+Para correr los tests, basta con ejecutar ./test_inputs.sh y, ESTO ES IMPORTANTE, la última linea impresa de main.c debería
+ser "The peak is <this_is_the_peak>" (como ya venía el archivo), ya que esto se usa para comparar con el valor esperado.Comparto 
+los archivos de input y el script :cara_ligeramente_sonriente: Respondan en este thread cualquier duda o si quieren que los ayude. 
+
+Nota importante: No es importante que entiendan el script bash, mi idea es que esto les ayude a resolver el ejercicio.
+Nota importante 2: No se confien, que pasen los tests no significa que todo su programa ande bien, hagan todas las pruebas que consideren necesarias además de esto! (editado) 

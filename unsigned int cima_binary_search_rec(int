@@ -1,0 +1,25 @@
+unsigned int cima_binary_search_rec(int a[], unsigned int lft, unsigned int rgt){
+     unsigned int cima;
+     unsigned int mid;
+     if(lft > rgt){
+        cima = 0;
+     }
+     if(lft <= rgt){
+         mid = (lft+rgt)/2;
+     }
+     if(a[mid-1] < a[mid] && a[mid] < a[mid+1]){
+         cima = cima_binary_search_rec(a, mid+1, rgt);
+     }
+     else if(a[mid-1] < a[mid] && a[mid] > a[mid+1]){
+         cima = mid;
+     }
+     else{
+         cima = cima_binary_search_rec(a, lft, mid-1);
+     }
+     return cima;
+}
+
+unsigned int cima_binary_search(int a[]){
+    unsigned int cima = cima_binary_search_rec(a, 0, 4);
+    return cima;
+}
